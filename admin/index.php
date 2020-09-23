@@ -28,11 +28,11 @@ if(!isset($_SESSION['id'])){
   <head>
     <title>Admin Panel</title>
   </head>
-  <body style="background: #08f;color:#fff">
+  <body style="background: #000000;color:#fff">
      <center>
         <form style="padding-top:10%;" method="post" action="">
           <div class="centrar_login">
-            <label><h2><i class="fa fa-key"></i> Iniciar Sesión Como Administrador</h2></label>
+            <label><h2><i class="fa fa-key"></i> Iniciar Sesión como Administrador</h2></label>
             <div class="form-group">
               <input style="padding:10px;color:#333;width:40%" type="text" class="form-control" placeholder="Usuario" name="username"/>
             </div>
@@ -59,7 +59,7 @@ if(!isset($_SESSION['id'])){
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin Tienda en Linea</title>
+  <title>Admin iShoping en Linea</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -951,7 +951,7 @@ if(!isset($_SESSION['id'])){
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.3.3
     </div>
-    <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    <strong>Copyright iShoping &copy; 2020 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
     reserved.
   </footer>
 

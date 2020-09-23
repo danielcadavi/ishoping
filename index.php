@@ -21,11 +21,11 @@ if(!isset($p)){
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<title>Tienda Online</title>
+	<title>iShoping</title>
 </head>
 <body>
 	<div class="header">
-		Tienda Online
+		iShoping
 	</div>
 	<div class="menu">
 		<a href="?p=principal">Principal</a>
@@ -139,7 +139,7 @@ while($r = mysqli_fetch_array($q)){
 	</div>
 
 	<div class="footer">
-		Copyright iShoping &copy; <?=date("Y")?>
+		Copyright iShoping  &copy; <?=date("Y")?>
 	</div>
 
 
