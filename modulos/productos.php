@@ -7,7 +7,7 @@ if(isset($cat)){
 	$sc = $mysqli->query("SELECT * FROM categorias WHERE id = '$cat'");
 	$rc = mysqli_fetch_array($sc);
 	?>
-	<h1>Categoria Filtrada por: <?=$rc['categoria']?></h1>
+	<h1>Filtrado por: <?=$rc['categoria']?></h1>
 	<?php
 }
 

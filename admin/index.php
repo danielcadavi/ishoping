@@ -17,9 +17,7 @@ if(isset($logear)){
     redir("./");
   }
 
-
 }
-
 
 if(!isset($_SESSION['id'])){
   ?>
@@ -106,9 +104,9 @@ if(!isset($_SESSION['id'])){
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>TL</span>
+      <span class="logo-mini"><b>A</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>TL</span>
+      <span class="logo-lg"><b>Admin</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -391,13 +389,13 @@ if(!isset($_SESSION['id'])){
         
         <li>
           <a href="./?p=agregar_categoria">
-            <i class="fa fa-th"></i> <span>Agregar Categoria</span>
+            <i class="fa fa-th"></i> <span>Agregar Local</span>
           </a>
         </li>
         
         <li>
           <a href="./?p=manejar_tracking">
-            <i class="fa fa-th"></i> <span>Manejar Tracking</span>
+            <i class="fa fa-th"></i> <span>Gestionar Pedidos</span>
           </a>
         </li>
         
