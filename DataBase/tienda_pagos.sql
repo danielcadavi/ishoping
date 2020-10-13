@@ -1,0 +1,4 @@
+INSERT INTO tienda.pagos (id, id_cliente, id_compra, comprobante, nombre, fecha, estado) VALUES (6, 1, 16, '054136164.png', '', '2020-09-23 22:41:36', 1);
+INSERT INTO tienda.pagos (id, id_cliente, id_compra, comprobante, nombre, fecha, estado) VALUES (9, 1, 20, '17171283.png', '', '2020-10-07 10:17:12', 1);
+INSERT INTO tienda.pagos (id, id_cliente, id_compra, comprobante, nombre, fecha, estado) VALUES (12, 1, 23, '195120892.png', '', '2020-10-07 12:51:20', 1);
+INSERT INTO tienda.pagos (id, id_cliente, id_compra, comprobante, nombre, fecha, estado) VALUES (13, 1, 24, '053551922.png', '', '2020-10-07 22:35:51', 1);
