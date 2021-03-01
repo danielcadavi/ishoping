@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-06-2019 a las 03:47:00
--- Versión del servidor: 10.1.37-MariaDB
--- Versión de PHP: 7.3.0
+-- Tiempo de generación: 23-09-2020 a las 03:02:04
+-- Versión del servidor: 10.4.14-MariaDB
+-- Versión de PHP: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -79,7 +78,7 @@ CREATE TABLE `categorias` (
 
 INSERT INTO `categorias` (`id`, `categoria`) VALUES
 (2, 'Tecnologia'),
-(3, 'Alimentos'),
+(3, 'Vestuario'),
 (4, 'En Linea');
 
 -- --------------------------------------------------------
@@ -102,7 +101,8 @@ CREATE TABLE `clientes` (
 INSERT INTO `clientes` (`id`, `username`, `password`, `name`) VALUES
 (1, 'herreraa', '123456', 'felipe'),
 (3, 'william', 'william', 'william'),
-(6, 'test', 'test', 'test');
+(6, 'test', 'test', 'test'),
+(7, 'clemengidu', '123', 'Clemen');
 
 -- --------------------------------------------------------
 
@@ -125,7 +125,8 @@ CREATE TABLE `compra` (
 INSERT INTO `compra` (`id`, `id_cliente`, `fecha`, `monto`, `estado`) VALUES
 (8, 1, '2019-05-22 18:03:44', 1360, 1),
 (9, 1, '2019-05-29 22:31:14', 2360, 0),
-(10, 1, '2019-05-29 23:02:19', 2860, 0);
+(10, 1, '2019-05-29 23:02:19', 2860, 0),
+(11, 7, '2020-09-22 19:21:30', 146391, 0);
 
 -- --------------------------------------------------------
 
@@ -171,11 +172,11 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `price`, `imagen`, `name`, `id_categoria`, `oferta`, `descargable`) VALUES
-(1, 1000, 'Aceite776.png', 'Aceite', 3, 0, ''),
-(2, 200, 'Cebolla493.png', 'Cebolla', 3, 0, ''),
-(4, 1000, 'Leche581.png', 'Leche', 3, 50, ''),
-(5, 400, 'Zanahoria838.png', 'Zanahoria', 3, 10, ''),
-(7, 1000, 'Secreto218.png', 'Secreto', 0, 0, '215secreto del mundo.txt');
+(1, 29900, '1.png', 'Tshirt para hombre tennis, con estampado de grunge negro', 3, 0, ''),
+(2, 79900, '2.png', 'Camisa para mujer tennis, camisas entero manga corta', 3, 0, ''),
+(4, 34900, '4.png', 'Kit de 3 tapabocas marca tennis, tapabocas estampado - tapabocas para mujer tennis, tapabocas estampado azul', 3, 50, ''),
+(5, 62990, '5.png', 'Bolsa lil break - pouch lil break', 3, 10, ''),
+(7, 109900, '3.png', 'Tenis para mujer tennis, sintetico y fondo entero', 0, 0, '215secreto del mundo.txt');
 
 -- --------------------------------------------------------
 
@@ -217,7 +218,9 @@ INSERT INTO `productos_compra` (`id`, `id_compra`, `id_producto`, `cantidad`, `m
 (19, 10, 5, 1, 400),
 (20, 10, 4, 1, 1000),
 (21, 10, 7, 1, 1000),
-(22, 10, 1, 1, 1000);
+(22, 10, 1, 1, 1000),
+(23, 11, 5, 1, 62990),
+(24, 11, 1, 3, 29900);
 
 --
 -- Índices para tablas volcadas
@@ -285,7 +288,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT de la tabla `carro`
 --
 ALTER TABLE `carro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `categorias`
@@ -297,13 +300,13 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `compra`
 --
 ALTER TABLE `compra`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `pagos`
@@ -321,7 +324,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `productos_compra`
 --
 ALTER TABLE `productos_compra`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

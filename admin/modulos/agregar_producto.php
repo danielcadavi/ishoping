@@ -54,7 +54,7 @@ if(isset($eliminar)){
 	<div class="form-group">
 
 		<select name="categoria" required class="form-control">
-			<option value="">Seleccione una categoria</option>
+			<option value="">Seleccione el Local</option>
 			<?php
 				$q = $mysqli->query("SELECT * FROM categorias ORDER BY categoria ASC");
 
@@ -94,8 +94,8 @@ if(isset($eliminar)){
 		</select>
 	</div>
 
-	<div class="form-group">
-		<label>¿Tiene algun archivo de descarga?</label>
+    <div class="form-group">
+		<label>¿Desea adjuntar un documento o formato de garantia?</label>
 		<input class="form-control" type="file" name="descargable"/>
 	</div>
 
@@ -116,7 +116,7 @@ if(isset($eliminar)){
 		<th>Descuento</th>
 		<th>Precio Total</th>
 		<th>Imagen</th>
-		<th>Categoria</th>
+		<th>Local Comercial</th>
 		<th>Acciones</th>
 	</tr>
 
@@ -130,7 +130,8 @@ if(isset($eliminar)){
 			if(mysqli_num_rows($cat)>0){
 				$rcat = mysqli_fetch_array($cat);
 				$categoria = $rcat['categoria'];
-			}else{
+			}
+			else{
 				$categoria = "--";
 			}
 

@@ -21,7 +21,7 @@ if(isset($eliminar)){
 
 ?>
 
-<h1>Trackings</h1><br><br>
+<h1>Estado Pedidos</h1><br><br>
 
 <table class="table table-stripe">
 	<tr>

@@ -26,15 +26,15 @@ if(isset($eliminar)){
 
 ?>
 
-<h1>Agregar Categoria</h1><br><br>
+<h1>Agregar Local Comercial</h1><br><br>
 
 <form method="post" action="">
 	<div class="form-group">
-		<input type="text" class="form-control" name="categoria" placeholder="Categoria"/>
+		<input type="text" class="form-control" name="categoria" placeholder="Nombre del local"/>
 	</div>
 
 	<div class="form-group">
-		<input type="submit" class="btn btn-primary" name="enviar" value="Agregar categoria"/>
+		<input type="submit" class="btn btn-primary" name="enviar" value="Agregar Local"/>
 	</div>
 </form><br>
 
@@ -43,7 +43,7 @@ if(isset($eliminar)){
 <table class="table table-striped">
 	<tr>
 		<th>ID</th>
-		<th>Categoria</th>
+		<th>Local</th>
 		<th>Acciones</th>
 	</tr>
 

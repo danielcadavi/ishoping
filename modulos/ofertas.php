@@ -1,5 +1,5 @@
 <select id="categoria" onchange="redir_cat()" class="form-control">
-	<option value="">Seleccione una categoria para filtrar</option>
+	<option value="">Seleccione un local para filtrar</option>
 	<?php
 	$cats = $mysqli->query("SELECT * FROM categorias ORDER BY categoria ASC");
 	while($rcat = mysqli_fetch_array($cats)){
@@ -18,7 +18,7 @@ if(isset($cat)){
 	$sc = $mysqli->query("SELECT * FROM categorias WHERE id = '$cat'");
 	$rc = mysqli_fetch_array($sc);
 	?>
-	<h1>Categoria Filtrada por: <?=$rc['categoria']?></h1>
+	<h1>Filtrado por: <?=$rc['categoria']?></h1>
 	<?php
 }
 
